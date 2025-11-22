@@ -1,0 +1,17 @@
+- Mostrar todas las mesas, y en cada mesa que aparezca abajo el Mozo al que le corresponde...
+- Hay que hacer roles y permisos. Si tu rol es MOZO, mostrar algo. Si tu rol es RESTO, otra vista, etc.
+- Estados de las Mesas o Pedidos: Disponible, Ocupada, Cobrada, Demorada
+- Regla de Negocio: Si pasan 2 horas cuando la Mesa está Ocupada, pasa a Estado Demorada.
+- Cada vez que agreguemos algo en el Pedido, que tengamos una ultimaHoraModificacion en Pedido, para que cada vez que uno modifica algo, cambia esa hora, y esa es la hora que comparás con la actual, para que cada vez que alguien pide algo, se sabe cuánto se demoró según lo que pidió. O, podemos considerar algo más simple como demorar la mesa en general. => Una Demora puede ser algo calculable (con la hora de creación sacas la hora en el momento, y podés hacer una resta...). Poder plantear que agregamos un HistorialDeEstado dependiendo de en qué momento esté el Pedido. SIIII ES UN TP DE DESARROLLO DE SOFTWAREEEEEEEEEEEEEEEEE => Usamos este proyecto de titulo analista ya fue >:)
+- Añadir al Detalle: fechaHoraPedido.
+- Pensar las reglas de negocio, cuando pasa 'X' tiempo pasar a otro Estado.
+- En Mesa: Los colores determinan el Estado. Si es 'verde' = 'Disponible', si es rojo 'Ocupado'.
+- Roles: Mozo, Administrador
+- INICIO DE SESIÓN DE MOZO: Un sólo Login del Restaurante, y que todo Mozo consulte en ese (para que todos los Mozos vayan a ese con ese único Usuario de esa Sucursal). Porque si cada Mozo tiene que iniciar sesión cada vez que va a cargar un pedido, tiene que poner muchos datos y pierde tiempo = no es eficiente. UNA CUENTA PARA TODOS LOS MOZOS. 
+- Falta: tabla Usuarios. Una tabla de Usuarios para guardar las cuentas. Si Restaurantes es el Usuario, guardar las cuentas en ese.
+
+/* Para el día de hoy:
+
+Trabajar contrastando contra la base de datos... agregando atributos para ver si anda.
+
+*/
